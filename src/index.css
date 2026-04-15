@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #7a1c2e;
+  --color-royal-gold: #d4af37;
+  --color-gold-deep: #b8860b;
+  --color-ivory: #f8f1e7; /* Soft Royal Cream */
+  
+  --color-deep-red: #7a1c2e;
+  --color-rose-gold: #d4af37;
+  
+  --color-navy: #1a2a3a;
+  --color-dark-purple: #2d1e2f;
+  
+  --color-pink-base: #f8f1e7; /* Soft Royal Cream */
+  --color-pink-deep: #7a1c2e; /* Maroon deep */
+
+  --font-royal-title: 'Playfair Display', serif;
+  --font-royal-script: 'Great Vibes', cursive;
+  --font-marathi-title: 'Yatra One', system-ui, serif;
+  --font-marathi-body: 'Mukta', sans-serif;
+  --font-modern: 'Outfit', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-ivory text-maroon font-marathi-body overflow-x-hidden;
+    margin: 0;
+  }
+}
+
+/* Lenis Recommended Styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@layer utilities {
+  .royal-bg-texture {
+    background-color: #f8f1e7;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0c5.52 0 10 4.48 10 10s-4.48 10-10 10-10-4.48-10-10 4.48-10 10-10zm0 20c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 40c-11.05 0-20-8.95-20-20s8.95-20 20-20 20 8.95 20 20-8.95 20-20 20zM0 50c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10-10-4.48-10-10zm20 0c0 5.52 4.48 10 10 10s10-4.48 10-10-4.48-10-10-10-10 4.48-10 10zM50 80c5.52 0 10 4.48 10 10s-4.48 10-10 10-10-4.48-10-10 4.48-10 10-10zm0 20c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm-50-20c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10-10-4.48-10-10zM100 50c0-5.52-4.48-10-10-10s-10 4.48-10 10 4.48 10 10 10 10-4.48 10-10zM80 50c0 5.52-4.48 10-10 10s-10-4.48-10-10 4.48-10 10-10 10 4.48 10 10z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+  }
+
+  .palace-arch {
+    border-radius: 50% 50% 0 0;
+    overflow: hidden;
+  }
+
+  .royal-frame {
+    position: relative;
+    padding: 12px;
+    background: linear-gradient(
+      120deg,
+      #d4af37 20%,
+      #f7e7a1 40%,
+      #d4af37 60%
+    );
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+    box-shadow: 
+      0 15px 40px rgba(0, 0, 0, 0.25),
+      inset 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .royal-frame::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: inherit;
+    border: 1.5px solid rgba(255, 215, 0, 0.5);
+    pointer-events: none;
+  }
+
+  .spotlight-radial {
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.2) 0%, transparent 75%);
+  }
+
+  @keyframes shine {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  .top-ornament {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    z-index: 20;
+    filter: drop-shadow(0 5px 15px rgba(122, 28, 46, 0.4));
+  }
+
+  .glass-card-royal {
+    background: rgba(248, 241, 231, 0.85); /* Cream base with opacity */
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 40px rgba(122, 28, 46, 0.1); /* Maroon-ish shadow */
+    border-radius: 2.5rem;
+  }
+
+  .gold-border-glow {
+    position: relative;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+  }
+
+  .sparkle-text {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), 0 0 12px rgba(212, 175, 55, 0.4);
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(212, 175, 55, 0) 0%,
+      rgba(212, 175, 55, 0.3) 50%,
+      rgba(212, 175, 55, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 4s infinite linear;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes firefly {
+  0% { transform: scale(0) rotate(0deg); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: scale(1.5) rotate(180deg); opacity: 0; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-1000px) rotate(45deg); opacity: 0; }
+}
+
+.petal {
+  position: absolute;
+  pointer-events: none;
+  animation: float linear infinite;
+}
