@@ -26,7 +26,7 @@ export default function Family() {
             whileInView={{ opacity: 1 }}
             className="font-marathi-body font-bold text-maroon text-6xl md:text-7xl mb-6 sparkle-text"
           >
-            आप्तपरिवार
+            आपले स्नेहांकित
           </motion.h2>
           <p className="font-royal-script text-royal-gold text-5xl italic drop-shadow-sm">The Beloved Family</p>
           <div className="w-32 h-[2px] bg-gradient-to-r from-transparent via-maroon/20 to-transparent mx-auto mt-10"></div>
@@ -75,7 +75,7 @@ export default function Family() {
           {/* Extended Family & Youth */}
           <motion.div variants={container} initial="hidden" whileInView="visible" className="text-center space-y-12">
              <motion.div variants={item} className="inline-block px-10 py-4 border-2 border-royal-gold/30 rounded-full mb-6 gold-border-glow">
-              <span className="text-maroon text-3xl font-royal-title italic">आप्त परिवार</span>
+              <span className="text-maroon text-3xl font-royal-title italic">आपले नम्र</span>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-maroon font-marathi-body font-bold text-xl">
               <div className="space-y-4">
