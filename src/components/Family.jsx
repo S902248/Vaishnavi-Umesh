@@ -87,8 +87,8 @@ export default function Family() {
               <div className="space-y-4">
                 <p>चि. गौरव शिवाजी पा. आढाव <span className="text-xs opacity-60">(M.Sc. Chem.)</span></p>
                 <p>चि. शुभम दिनकर पा. आढाव <span className="text-xs opacity-60">(MCA)</span></p>
-                <p>चि. शिवम रामदास पा. आढाव</p>
                 <p>चि. सत्यम रामदास पा. आढाव <span className="text-xs opacity-60">(M.Sc. Elc.)</span></p>
+                <p>चि. शिवम रामदास पा. आढाव</p>
               </div>
             </div>
           </motion.div>
