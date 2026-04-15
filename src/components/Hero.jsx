@@ -75,12 +75,14 @@ export default function Hero({ images }) {
                 src={images[2]} 
                 alt="Vaishnavi & Umesh" 
                 className="w-full h-full object-cover object-center"
-                initial={{ scale: 1.25 }}
-                animate={{ 
+                loading="eager"
+                decoding="async"
+                initial={{ scale: 1.15 }}
+                animate={typeof window !== 'undefined' && window.innerWidth > 768 ? { 
                   scale: [1.15, 1.3, 1.15],
                   x: [0, 8, -8, 0],
                   y: [0, -8, 8, 0]
-                }}
+                } : { scale: 1.15 }}
                 transition={{ 
                   scale: { duration: 25, repeat: Infinity, ease: "linear" },
                   x: { duration: 30, repeat: Infinity, ease: "linear" },

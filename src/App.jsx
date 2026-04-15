@@ -1,16 +1,18 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, lazy, Suspense } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Hero from './components/Hero'
 import Invitation from './components/Invitation'
-import Events from './components/Events'
-import Gallery from './components/Gallery'
-import Family from './components/Family'
 import Decorations from './components/Decorations'
 import SmoothScroll from './components/SmoothScroll'
 import DoorEntry from './components/DoorEntry'
 import Countdown from './components/Countdown'
 import GoldParticles from './components/GoldParticles'
-import Footer from './components/Footer'
+
+// Lazy load below-the-fold components
+const Events = lazy(() => import('./components/Events'));
+const Gallery = lazy(() => import('./components/Gallery'));
+const Family = lazy(() => import('./components/Family'));
+const Footer = lazy(() => import('./components/Footer'));
 
 
 // Import assets safely
@@ -130,6 +132,7 @@ function App() {
             muted 
             loop 
             playsInline
+            preload="metadata"
             className="w-full h-full object-cover opacity-20"
           >
             <source src={bgVideo} type="video/mp4" />
@@ -144,11 +147,13 @@ function App() {
           <Hero images={images} />
           <Invitation />
           <Countdown />
-          <Events />
-          <Gallery images={images} />
-
-          <Family />
-          <Footer />
+          
+          <Suspense fallback={<div className="h-20" />}>
+            <Events />
+            <Gallery images={images} />
+            <Family />
+            <Footer />
+          </Suspense>
         </div>
       </motion.div>
       </SmoothScroll>

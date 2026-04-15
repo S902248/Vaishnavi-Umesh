@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 
 export default function GoldParticles() {
-  const particles = Array.from({ length: 40 });
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  const particles = Array.from({ length: isMobile ? 12 : 40 });
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
