@@ -17,7 +17,7 @@ export default function Events() {
       time: "शनिवार, दि. २५/०४/२०२६",
       detail: "सायंकाळी ६:४५ वाजता",
       icon: "✨",
-      tagline: "स्टॅमिना, जोम आणि उत्साह!"
+     
     },
     {
       title: "शुभविवाह",
@@ -44,7 +44,7 @@ export default function Events() {
           >
             The Celebration
           </motion.span>
-          <motion.h2 variants={cardVariants} className="font-marathi-title text-maroon text-6xl md:text-7xl sparkle-text">
+          <motion.h2 variants={cardVariants} className="font-marathi-body font-bold text-maroon text-6xl md:text-7xl sparkle-text">
             शुभेच्छा व कार्यक्रम
           </motion.h2>
           <div className="w-48 h-[2px] bg-gradient-to-r from-transparent via-royal-gold to-transparent mx-auto mt-6"></div>
@@ -81,7 +81,7 @@ export default function Events() {
         >
           <div className="md:w-1/2 p-10 md:p-20 flex flex-col justify-center text-left border-r border-royal-gold/10">
             <div className="text-5xl mb-10 text-maroon">📍</div>
-            <h3 className="font-marathi-title text-5xl md:text-6xl text-maroon mb-8">विवाहस्थळ</h3>
+            <h3 className="font-marathi-body font-bold text-5xl md:text-6xl text-maroon mb-8">विवाहस्थळ</h3>
             <p className="font-marathi-body text-maroon/90 text-2xl md:text-3xl leading-relaxed font-bold mb-6">
               भागिरथी लॉन्स, मानोरी
             </p>
@@ -98,6 +98,7 @@ export default function Events() {
               className="inline-block w-fit px-14 py-5 bg-maroon text-royal-gold font-bold rounded-full font-modern tracking-[0.2em] shadow-2xl hover:bg-[#b3002d] transition-all uppercase border border-royal-gold/30 text-lg"
             >
               Get Directions
+              ठिकाण बघा
 
             </motion.a>
           </div>

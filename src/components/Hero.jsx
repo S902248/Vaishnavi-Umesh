@@ -109,9 +109,9 @@ export default function Hero({ images }) {
           variants={container}
           initial="hidden"
           animate="visible"
-          className="font-marathi-title text-maroon text-7xl md:text-9xl lg:text-[10rem] my-8 flex flex-wrap justify-center items-center gap-8"
+          className="text-maroon text-7xl md:text-9xl lg:text-[10rem] my-8 flex flex-wrap justify-center items-center gap-8"
         >
-          <motion.span variants={child} className="drop-shadow-lg text-maroon whitespace-nowrap">
+          <motion.span variants={child} className="font-marathi-body font-bold drop-shadow-lg text-maroon whitespace-nowrap">
             {name1}
           </motion.span>
           
@@ -124,7 +124,7 @@ export default function Hero({ images }) {
             &
           </motion.span>
 
-          <motion.span variants={child} className="drop-shadow-lg text-maroon whitespace-nowrap">
+          <motion.span variants={child} className="font-marathi-body font-bold drop-shadow-lg text-maroon whitespace-nowrap">
             {name2}
           </motion.span>
         </motion.h1>

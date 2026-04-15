@@ -26,7 +26,7 @@ export default function Gallery({ images }) {
             viewport={{ once: true }}
             className="font-marathi-title text-maroon text-center text-6xl md:text-7xl mb-6 sparkle-text"
           >
-            आठवणींचे काही क्षण
+            
           </motion.h2>
           <p className="font-royal-script text-royal-gold text-5xl italic drop-shadow-sm">Moments to Cherish Forever</p>
           <div className="w-32 h-[2px] bg-gradient-to-r from-transparent via-maroon/30 to-transparent mx-auto mt-10"></div>

@@ -15,9 +15,7 @@ export default function Footer() {
           <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-royal-gold/40"></div>
         </div>
 
-        <p className="font-marathi-body text-maroon/60 text-lg tracking-[0.2em] mb-4 uppercase">
-          Digitally Crafted with Love
-        </p>
+        
         
         <motion.div 
           whileHover={{ scale: 1.05 }}
@@ -28,9 +26,7 @@ export default function Footer() {
           </h2>
         </motion.div>
 
-        <div className="mt-12 text-maroon/40 font-modern text-xs tracking-widest">
-          © {new Date().getFullYear()} • THE ROYAL UNION
-        </div>
+        
       </motion.div>
     </footer>
   );

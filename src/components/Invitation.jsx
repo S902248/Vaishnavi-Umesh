@@ -46,7 +46,7 @@ export default function Invitation() {
           <div className="relative inline-block px-10">
             <motion.h2 
               variants={itemVariants} 
-              className="font-marathi-title text-maroon text-6xl md:text-7xl flex flex-wrap justify-center gap-4 py-2 drop-shadow-sm sparkle-text"
+              className="font-marathi-body font-bold text-maroon text-6xl md:text-7xl flex flex-wrap justify-center gap-4 py-2 drop-shadow-sm sparkle-text"
             >
               {"सस्नेह निमंत्रण".split(" ").map((word, i) => (
                 <motion.span key={i}>{word}</motion.span>
@@ -67,7 +67,7 @@ export default function Invitation() {
           {/* Bride Section */}
           <motion.div variants={itemVariants} className="relative group">
             <h3 className="font-marathi-title text-5xl md:text-6xl text-maroon mb-8 relative z-10">
-              चि. सौ. कां. वैष्णवी 
+              चि. सौ. कां. <span className="font-marathi-body font-bold text-6xl md:text-7xl">वैष्णवी</span>
               <span className="text-xl font-modern text-gold-deep block mt-3 tracking-widest uppercase opacity-80">(MCA)</span>
             </h3>
             <p className="font-marathi-body text-maroon/90 text-2xl leading-relaxed font-medium relative z-10 max-w-2xl mx-auto italic">
@@ -82,7 +82,7 @@ export default function Invitation() {
           <motion.div variants={itemVariants} className="relative group">
              <div className="w-12 h-[1px] bg-royal-gold/30 mx-auto mb-16"></div>
             <h3 className="font-marathi-title text-5xl md:text-6xl text-maroon mb-8 relative z-10">
-              चि. उमेश 
+              चि. <span className="font-marathi-body font-bold text-6xl md:text-7xl">उमेश</span>
               <span className="text-xl font-modern text-gold-deep block mt-3 tracking-widest uppercase opacity-80">(M.Sc., MBA)</span>
             </h3>
             <p className="font-marathi-body text-maroon/90 text-2xl leading-relaxed font-medium relative z-10 max-w-2xl mx-auto italic">

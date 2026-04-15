@@ -24,7 +24,7 @@ export default function Family() {
           <motion.h2 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="font-marathi-title text-maroon text-6xl md:text-7xl mb-6 sparkle-text"
+            className="font-marathi-body font-bold text-maroon text-6xl md:text-7xl mb-6 sparkle-text"
           >
             आप्तपरिवार
           </motion.h2>
@@ -63,7 +63,7 @@ export default function Family() {
               <motion.div variants={item} className="group">
                 <p className="font-marathi-body text-maroon text-3xl font-bold">श्री. रामदास श्रीपती पा. आढाव <span className="text-lg opacity-70">(मा. चेअरमन)</span></p>
                 <div className="h-[1px] w-12 bg-royal-gold/20 mx-auto my-4"></div>
-                <p className="font-marathi-body text-maroon text-3xl font-bold">श्री. जनार्दन रंगनाथ पा. आढाव</p>
+                <p className="font-marathi-body text-maroon text-3xl font-bold">श्री. जनार्दन रंगनाथ पा. आढाव <span className="text-lg opacity-70">(ग्रामपंचायत सदस्य)</span></p>
                 <div className="h-[1px] w-12 bg-royal-gold/20 mx-auto my-4"></div>
                 <p className="font-marathi-body text-maroon text-3xl font-bold">श्री. शिवाजी श्रीपती पा. आढाव</p>
                 <div className="h-[1px] w-12 bg-royal-gold/20 mx-auto my-4"></div>
@@ -80,7 +80,7 @@ export default function Family() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-maroon font-marathi-body font-bold text-xl">
               <div className="space-y-4">
                 <p>श्री. ज्ञानदेव आण्णासाहेब पा. गावडे</p>
-                <p>श्री. रोहीत एकनाथ पा. शेळके <span className="text-xs opacity-60">(ग्रामपंचायत सदस्य)</span></p>
+                <p>श्री. रोहीत एकनाथ पा. शेळके <span className="text-xs opacity-60"></span></p>
                 <p>श्री. योगेश जनार्दन पा. आढाव <span className="text-xs opacity-60">(MBA)</span></p>
                 <p>श्री. शनैश्वर जनार्दन पा. आढाव</p>
               </div>
