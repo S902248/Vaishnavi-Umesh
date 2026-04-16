@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, lazy, Suspense } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 import Hero from './components/Hero'
 import Invitation from './components/Invitation'
 import Decorations from './components/Decorations'
@@ -85,6 +86,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       <audio 
         ref={bgAudioRef} 
         src={bgMusic} 
